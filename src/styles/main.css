@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 55px;
+}
+
+.about-container{
+    display: flex;
+    margin: 70px 30px;
+    gap: 70px;
+}
+
+.about-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-left h1{
+    font-size: 55px;
+}
+
+.about-left p{
+    font-size: 18px;
+    line-height: 28px;
+    margin: 20px;
+    text-align: justify;
+}
+
+.about-right img{
+    height: 320px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.about-right img:hover{
+    transform: scale(1.05);
+}
+
+.service-small{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 20px 30px;
+}
+
+.service-small .service-small-h3{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    background-color: white;
+}
+
+.service-small .service-small-h3 h3{
+    font-size: 30px;
+}
+
+.service-small .service-small-h3 img{
+    height: 100px;
+}
+
+
+.gyik{
+    text-align: center;
+}
+
+.ask{
+    text-align: center;
+}
+
+.form2-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form2-container .form2-button{
+    margin: 30px 0;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.form2-container .form2 form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+
+.form2-container .form2 form input{
+    padding: 10px;
+    font-size: 16px;
+}
+.form2-container .form2 form input:focus{
+    outline: none;
+}
+
+.form2-container .form2 form textarea:focus{
+    outline: none;
+}
+
+.form2-container .form2 form textarea{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form2-container .form2 form button{
+    margin: 20px 180px;
+    padding: 6px;
+    transition: all 0.4s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+.form2-container .form2 form button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 1080px) {
+    .about-container{
+        justify-content: center;
+        gap: 10px
+    }
+
+    .about-left h1{
+        font-size: 35px;
+    }
+
+    .about-left p{
+        font-size: 14px;
+        max-width: 600px;
+    }
+
+    .about-right img{
+        height: 300px;
+    }
+}
+
+@media (max-width: 850px){
+    .about-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-left p{
+        line-height: 1.6;
+
+    }
+
+    .about-right img{
+        height: 300px;
+    }
+
+    .service-small{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 480px){
+    .about-right img{
+        height: 200px;
+    }
+
+    .ask{
+        font-size: 35px;
+        margin: 10px;
+    }
+
+    .service-small{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 80px;
+    }
+
+    .form2-container .form2 form button{
+        margin: 10px 0;
+        padding: 6px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .form2-container .form2 form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+    }
+
+    .gyik{
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+

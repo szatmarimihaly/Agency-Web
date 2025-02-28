@@ -1,0 +1,35 @@
+.services-container{
+    margin: 100px 20px;
+    padding: 10px 0;
+    background: #000;
+    border-radius: 20px;
+}
+
+.services-container h1{
+    margin: 20px 30px;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .services-container{
+        margin: 20px 10px;
+        padding: 10px 0;
+        background: #000;
+        border-radius: 20px;
+    }
+
+    .services-container h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .services-container h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}
+
+
+

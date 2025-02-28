@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-us{
+    display: flex;
+    margin: 70px 30px;
+    gap: 70px;
+}
+
+.why-left img{
+    height: 550px;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+
+.why-left img:hover{
+    transform: scale(1.05);
+}
+
+.why-right h1{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.why-right .text{
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.why-right p{
+    margin-bottom: 20px;
+}
+
+.why-right ul li{
+    display: flex;
+    gap: 10px;
+}
+
+.why-right ul li img{
+    height: 20px;
+}
+
+@media (max-width: 480px){
+    .why-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 10px;
+    }
+
+    .why-left img{
+        height: 450px;
+    }
+
+    .why-right h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+    .why-right .text{
+        margin: 10px 10px;
+        font-size: 14px;
+    }
+    .why-right p{
+        font-size: 12px;
+    }
+
+    .why-right ul{
+        margin: 30px 20px 10px 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .why-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 10px;
+    }
+    .why-left img{
+        height: 400px;
+    }
+
+    .why-right .text{
+        margin: 20px 10px;
+        font-size: 16px;
+    }
+
+    .why-right ul{
+        margin: 30px 20px 10px 20px;
+    }
+
+}

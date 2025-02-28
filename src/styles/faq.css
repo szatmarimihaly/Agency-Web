@@ -1,0 +1,83 @@
+.faq {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.faq-item {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.question {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.answer {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    max-height: 0; /* Kezdetben rejtve van */
+    overflow: hidden; /* Elrejti a tartalmat, ha nem fér el */
+    opacity: 0; /* Kezdetben áttetsző */
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Animáció a max-height és az opacity változására */
+    border: 1px solid black;
+}
+
+.rotated {
+    transform: rotate(90deg);
+    transition: transform 0.4s ease;
+}
+
+.question.active {
+    background-color: #333;
+}
+
+.question.active i {
+    color: #f0f0f0;
+}
+
+.question.active + .answer {
+    max-height: 500px;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .faq-item {
+        flex: 1 1 100%; /* Kis képernyőn teljes szélességet foglalnak el */
+    }
+}
+
+@media (max-width: 480px){
+    .faq-item{
+        flex-wrap: wrap;
+        margin-bottom: 1px;
+    }
+}
+
+@media (max-width: 850px){
+    .faq{
+        margin-top: 0;
+    }
+
+    .faq-item{
+        margin-bottom: 1px;
+
+    }
+}

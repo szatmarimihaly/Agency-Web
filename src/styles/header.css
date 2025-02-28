@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 30px;
+    padding: 20px;
+    max-width: 1200px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar .left{
+    margin: 0 20px;
+    align-items: center;
+}
+
+.navbar .left img{
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar .right{
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+}
+
+.navbar .right ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.navbar .right ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.4s all ease;
+    display: inline-block;
+    padding: 4px;
+}
+
+.navbar .right ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px #ffffff;
+    transition: width 0.5s ease-in-out;
+}
+
+.navbar .right ul li a:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.navbar .right ul li a:hover::after{
+    width: 95%;
+}
+
+.navbar .right ul li button{
+    background-color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .navbar .right ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .navbar .right ul li {
+        width: 100%;
+    }
+
+    .navbar .right ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .navbar .right ul li button {
+        width: 80%;
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 850px){
+    .navbar{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .left img{
+        height: 45px;
+        margin: 10px 10px;
+    }
+
+    .navbar .right ul {
+        gap: 12px;
+    }
+
+    .navbar .right ul li a {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .navbar .right ul li button {
+        font-size: 14px;
+        padding: 6px 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Középre igazítás */
+        width: fit-content; /* Csak a tartalom szélessége legyen */
+        margin: 10px auto;
+        padding: 2px;
+    }
+
+    .navbar .left{
+        align-items: center;
+    }
+
+    .navbar .left img {
+        height: 40px;
+        margin: 10px 10px;
+    }
+
+    .navbar .right ul {
+        gap: 4px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navbar .right li{
+        padding: 10px;
+        width: 300px;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .navbar .right ul li a {
+        font-size: 12px;
+        font-weight: 800;
+        padding: 6px 0;
+    }
+
+    .navbar .right ul li button {
+        font-size: 12px;
+        padding: 6px 8px;
+        width: 100%;
+    }
+}
+

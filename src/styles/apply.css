@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.apply-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/apply-background.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.apply-page form{
+    background-color: white;
+    color: black;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.apply-page form p{
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+.apply-page form input{
+    margin-bottom: 20px;
+    padding: 2px 5px;
+    font-size: 14px;
+}
+
+.apply-page form button{
+    display: flex;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: transparent;
+    transition: all 0.4s ease;
+    text-align: center;
+    justify-content: center;
+    margin: 0 30px;
+    border-radius: 14px;
+}
+
+.apply-page form button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+@media (max-width: 850px){
+    .apply-page form{
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .apply-page form p{
+        margin-bottom: 3px;
+        font-size: 14px;
+    }
+
+    .apply-page form input{
+        font-size: 14px;
+    }
+
+@media(max-width: 480px){
+
+    .apply-page{
+        background-size: cover;
+    }
+
+    .apply-page form{
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .apply-page form p{
+        margin-bottom: 3px;
+        font-size: 12px;
+    }
+
+    .apply-page form input{
+        font-size: 12px;
+    }
+}
+
+}
+
+
