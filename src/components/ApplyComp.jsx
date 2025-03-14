@@ -13,7 +13,7 @@ function Apply({ language }){
     return(
         <>
                 <div className="apply-page">
-                    <form action="https://formspree.io/f/xqaevoje" method="POST">
+                    <form action="https://formspree.io/f/yourformspreekeyhere" method="POST">
 
                         <p>{translations[language].formName}</p>
                         <input type="text" name="Name" placeholder={translations[language].formN} required/>
