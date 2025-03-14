@@ -56,7 +56,7 @@ function Main({ language }){
                     </button>
                     {isVisible && (
                         <div className="form2">
-                            <form action="https://formspree.io/f/mpwqvajk" method="POST">
+                            <form action="https://formspree.io/f/yourformspreekeyhere" method="POST">
                                 <input type="text" placeholder={translations[language].formN} required></input>
                                 <input type="email" placeholder={translations[language].formE} name="email" required/>
                                 <input type="tel" placeholder={translations[language].formT} required></input>
